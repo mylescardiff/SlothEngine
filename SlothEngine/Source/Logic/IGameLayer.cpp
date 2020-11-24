@@ -136,15 +136,10 @@ void slth::IGameLayer::Update(float deltaTime)
 		return;
 	
 	UpdateLuaTick(deltaTime);
-
 	m_processManager.UpdateProcesses(deltaTime);
-
 	UpdatePhysics(deltaTime);
-
 	UpdateActors(deltaTime);
-
 	CheckCollisions(deltaTime);
-
 	CreateAndDeleteActors(deltaTime);
 
 #if _DEBUG
